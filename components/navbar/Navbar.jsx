@@ -50,9 +50,11 @@ const Navbar = () => {
                     </NavigationMenuItem>
                 </NavigationMenuList>
             </NavigationMenu>
+            <Link href={"/iletisim"}>
             <Button className={"md:block hidden hover:bg-black duration-300 cursor-pointer bg-purple-700 text-white hover:scale-110"}>
                 Randevu Oluştur
             </Button>
+            </Link>
             <MobileMenu />
         </div>
     )

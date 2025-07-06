@@ -22,7 +22,7 @@ const Hero = () => {
                     initial={{ y: -50, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ duration: 0.8, ease: 'easeOut' }}
-                    href="" className="px-5 py-2 md:text-lg text-sm bg-red-500 text-white rounded-3xl duration-300 hover:text-black hover:bg-white hover:border-2">İLETİŞİME GEÇ</motion.a>
+                    href="/iletisim" className="px-5 py-2 md:text-lg text-sm bg-red-500 text-white rounded-3xl duration-300 hover:text-black hover:bg-white hover:border-2">İLETİŞİME GEÇ</motion.a>
                 <div className="flex md:flex-row flex-col md:items-center md:mt-20 mt-10 justify-between gap-5">
                     <div>
                         <motion.div

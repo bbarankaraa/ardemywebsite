@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
+import Link from "next/link"
 
 const Video = () => {
   return (
@@ -11,7 +12,9 @@ const Video = () => {
         <div className="flex flex-col gap-4">
             <h1 className="text-3xl font-bold">ÖĞRENCİLERİMİN DERSLERİM HAKKINDA DÜŞÜNDÜKLERİ</h1>
             <p className="text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit facilis quibusdam dignissimos veniam excepturi itaque animi, dolorum saepe ratione quaerat placeat beatae similique enim reprehenderit natus iste ab at aspernatur unde ullam provident? Autem asperiores eos ex consequuntur. Ab quae est tempora! Voluptatibus debitis perferendis, enim quia natus recusandae quam.</p>
+            <Link href={"/iletisim"}>
             <Button className={"cursor-pointer"}>Hemen iletişime geç!</Button>
+            </Link>
         </div>
     </div>
   )

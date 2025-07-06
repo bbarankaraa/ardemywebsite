@@ -22,12 +22,12 @@ const MobileMenu = () => {
                         <SheetDescription>
                            <div className="flex flex-col gap-5">
                                 <Link href={"/"}>Anasayfa</Link>
-                                <Link href={"/"}>Belgeler</Link>
+                                <Link href={"/belgeler"}>Belgeler</Link>
                                 <Link href={"/"}>Ders içi kayıtlar</Link>
                                 <Link href={"/"}>Öğrenciler</Link>
-                                <Link href={"/"}>Hakkımda</Link>
-                                <Link href={"/"}>Sıkça Sorulan Sorular</Link>
-                                <Link href={"/"}>İletişim</Link>
+                                <Link href={"/hakkimizda"}>Hakkımızda</Link>
+                                <Link href={"/sss"}>Sıkça Sorulan Sorular</Link>
+                                <Link href={"/iletisim"}>İletişim</Link>
                            </div>
                         </SheetDescription>
                     </SheetHeader>
