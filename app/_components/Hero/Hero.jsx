@@ -22,7 +22,7 @@ const Hero = () => {
                     initial={{ y: -50, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ duration: 0.8, ease: 'easeOut' }}
-                    href="/iletisim" className="px-5 py-2 md:text-lg text-sm bg-red-500 text-white rounded-3xl duration-300 hover:text-black hover:bg-white hover:border-2">İLETİŞİME GEÇ</motion.a>
+                    href="/iletisim" className="px-5 py-2 md:text-lg text-sm bg-purple-500 text-white rounded-3xl duration-300 hover:text-black hover:bg-white hover:border-2">İLETİŞİME GEÇ</motion.a>
                 <div className="flex md:flex-row flex-col md:items-center md:mt-20 mt-10 justify-between gap-5">
                     <div>
                         <motion.div
@@ -41,10 +41,10 @@ const Hero = () => {
                             animate={{ y: 0, opacity: 1 }}
                             transition={{ duration: 0.8, ease: 'easeOut' }}
                             className="flex items-center gap-1">
-                            <CountUp end={8000} className="md:text-2xl text-xl text-blue-500 font-bold" />
+                            <CountUp end={20} className="md:text-2xl text-xl text-blue-500 font-bold" />
                             <span className="text-blue-500 font-bold text-2xl">+</span>
                         </motion.div>
-                        <h5 className="md:text-2xl text-xl md:mt-1">Yeni öğrenilen kelime</h5>
+                        <h5 className="md:text-2xl text-xl md:mt-1">Eğitim yolculuğunda <br /> desteklenen öğrenci</h5>
                     </div>
                     <div>
                         <motion.div
@@ -60,8 +60,9 @@ const Hero = () => {
 
                 </div>
             </div>
-            <div className="md:flex hidden items-center justify-center">
+            <div className="md:flex hidden items-center justify-center flex-col gap-5">
                 <Image src={"/ediz.png"} alt="hero image" height={1000} width={1000} />
+                <h2 className="text-2xl font-semibold">Kurucu / Founder</h2>
             </div>
         </div>
     )

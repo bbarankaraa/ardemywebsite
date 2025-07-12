@@ -27,7 +27,7 @@ const Process = () => {
     <CardTitle className={"md:text-3xl text-xl"}>Paket</CardTitle>
   </CardHeader>
   <CardContent>
-    <AiOutlineSelect className="md:text-6xl text-5xl md:text-start text-center text-red-700" />
+    <AiOutlineSelect className="md:text-6xl text-5xl md:text-start text-center text-purple-700" />
   </CardContent>
   <CardFooter>
     <p>Derslere başlamak istediğiniz paketi seçerek kendinizi geliştirmeye ve eğitim sürecine bir başlangıç yapın...</p>
@@ -38,7 +38,7 @@ const Process = () => {
     <CardTitle className={"md:text-3xl text-xl"}>İletişim</CardTitle>
   </CardHeader>
   <CardContent>
-    <FaPhoneAlt className="md:text-6xl text-5xl md:text-start text-center text-red-700" />
+    <FaPhoneAlt className="md:text-6xl text-5xl md:text-start text-center text-purple-700" />
   </CardContent>
   <CardFooter>
     <p>Bizle iletişime geçin ve sizlere sunduğumuz hizmetten bahsedelim, bu sayede kafanızda bir soru işareti kalmasın ve hizmetimizin kalitesini kendi gözlerinizle görün</p>
@@ -49,7 +49,7 @@ const Process = () => {
     <CardTitle className={"md:text-3xl text-xl"}>Hazırsınız!</CardTitle>
   </CardHeader>
   <CardContent>
-   <SiTicktick className="md:text-6xl text-5xl md:text-start text-center text-red-700" />
+   <SiTicktick className="md:text-6xl text-5xl md:text-start text-center text-purple-700" />
   </CardContent>
   <CardFooter>
     <p>Belirlediğiniz gün ve saatlerde artık ders almaya hazırsınız!</p>

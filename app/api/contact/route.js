@@ -26,7 +26,7 @@ export async function POST(req) {
     <p><strong>Mail</strong> : ${email}</p>
     <p><strong>Numara</strong> : ${phone}</p>
     `});
-    console.log("Email send",emailResponse);
+    
     return NextResponse.json({message: "Message Success!"},{status:200})
     } catch (error) {
         console.log(error)
