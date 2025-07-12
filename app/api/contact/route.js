@@ -18,7 +18,7 @@ export async function POST(req) {
         }
         const emailResponse = await resend.emails.send({
     from: 'User <onboarding@resend.dev>',
-    to: ['bbarankaraa@gmail.com'],
+    to: ['sevinclere@gmail.com'],
     subject: 'Tebrikler! Randevun var...',
     html: `
     <h2>RANDEVU BİLGİLERİ</h2>

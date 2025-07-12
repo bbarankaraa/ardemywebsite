@@ -11,7 +11,9 @@ const Video = () => {
         </div>
         <div className="flex flex-col gap-4">
             <h1 className="text-3xl font-bold">ÖĞRENCİLERİMİN DERSLERİM HAKKINDA DÜŞÜNDÜKLERİ</h1>
-            <p className="text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit facilis quibusdam dignissimos veniam excepturi itaque animi, dolorum saepe ratione quaerat placeat beatae similique enim reprehenderit natus iste ab at aspernatur unde ullam provident? Autem asperiores eos ex consequuntur. Ab quae est tempora! Voluptatibus debitis perferendis, enim quia natus recusandae quam.</p>
+            <p className="text-gray-500">Bizim için en önemlisi, öğrencilerimizin derslerden gerçekten keyif alması ve kendilerini geliştirdiklerini hissetmesi.
+Gelen geri dönüşler de gösteriyor ki; ilk dersten itibaren kendine güvenle cümle kurabilmek, konuşarak öğrenmek ve birlikte ilerlemek herkesi motive ediyor.
+Biz de tam olarak bunu hedefliyoruz: Sıkıcı kurallara boğulmadan, akıcı ve anlaşılır bir şekilde Dil konuşabilmek.</p>
             <Link href={"/iletisim"}>
             <Button className={"cursor-pointer bg-purple-500 duration-300"}>Hemen iletişime geç!</Button>
             </Link>
