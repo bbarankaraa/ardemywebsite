@@ -1,4 +1,4 @@
-import { Instagram, InstagramIcon, MapIcon, PhoneCallIcon } from "lucide-react"
+import { Instagram, PhoneCallIcon } from "lucide-react"
 import Link from "next/link"
 import { FaEnvelope, FaTelegram, FaWhatsapp } from "react-icons/fa"
 import { Button } from "../ui/button"
@@ -12,15 +12,17 @@ const Footer = () => {
                 <div className="">
                     <h1 className="md:mb-2 md:text-2xl text-2xl font-bold">Dersler nasıl mı işliyor ?</h1>
                     <p className="md:mb-2 text-sm w-[600px]">Eğitmenlerimiz, öğrencinin daha önce hiçbir bilgiye sahip olmadığı bir dili dahi ilk dersten <br /> itibaren anlamlandırabilmesini hedefler. Bu doğrultuda, başlangıç derslerinde öncelikle temel özne kalıpları işlenir ve en sık kullanılan fiillerden bazılarıyla desteklenir. Öğrenciler, yalnızca 10 dakika içerisinde “Biz bugün orada çalışıyoruz” gibi basit ama işlevsel cümleleri kurabilecek düzeye ulaşır. Derslerimizde öğrencinin yalnızca pasif bir dinleyici değil, aktif bir katılımcı olması esas alınır. Bu nedenle öğrenci, derste en az eğitmen kadar konuşur. Bu yaklaşım sayesinde öğrenci, öğrenmeye başladığı dili yalnızca duymakla kalmaz; onu kullanarak üretir. Temel cümleleri kendi çabasıyla kurabildiğini fark eden öğrenciler, bu başarı hissiyle derse daha motive bir şekilde devam eder. Her öğrencinin öğrenme hızı farklıdır. Bu nedenle dersin temposu, öğrencinin bireysel gelişimine göre şekillendirilir. Belirli bir yetkinliğe ulaşan öğrenciler ise konuşma odaklı seanslarla pratik becerilerini geliştirme fırsatı bulurlar.</p>
-                    <Button className={"cursor-pointer hover:-translate-y-1 duration-300"}>Hemen İletişime Geç</Button>
+                    <Link href={"/iletisim"}>
+                        <Button className={"cursor-pointer hover:-translate-y-1 duration-300"}>Hemen İletişime Geç</Button>
+                    </Link>
                 </div>
                 <div className="">
                     <Image src={"/footerimage.png"} alt="footer image h-{1000px} w-96" height={1000} width={800} />
                 </div>
             </div>
-            
+
             <div className="flex flex-col gap-3 max-w-3xs">
-                
+
                 <h1 className="text-2xl font-bold">Ediz Sevinçler</h1>
                 <p className="text-sm text-gray-500">Ardemy’i kurarken amacımız çok netti: İngilizce öğrenmenin herkes için ulaşılabilir, etkili ve kişiselleştirilmiş olmasını sağlamak.
                     Klasik yöntemlerden sıkılan, gerçek hayatta işe yarayacak şekilde İngilizcesini geliştirmek isteyen herkese modern, etkileşimli bir deneyim sunuyoruz.
@@ -64,20 +66,20 @@ const Footer = () => {
             </div>
             <div className="flex flex-col gap-3">
                 <h1 className="text-2xl font-bold">İletişim</h1>
-                 <div className="flex flex-col">
-        <Separator />
-        <div className="flex items-center mb-4">
-          <PhoneCallIcon size={16} />
-          <span className="ms-3">+90 551 132 03 40</span>
-        </div>
-        <Separator />
-        <div className="flex items-center mb-4">
-          <FaEnvelope size={16} />
-          <span className="ms-3">sevinclere@gmail.com</span>
-        </div>
-        </div>
+                <div className="flex flex-col">
+                    <Separator />
+                    <div className="flex items-center mb-4">
+                        <PhoneCallIcon size={16} />
+                        <span className="ms-3">+90 551 132 03 40</span>
+                    </div>
+                    <Separator />
+                    <div className="flex items-center mb-4">
+                        <FaEnvelope size={16} />
+                        <span className="ms-3">sevinclere@gmail.com</span>
+                    </div>
+                </div>
             </div>
-            
+
         </div>
     )
 }

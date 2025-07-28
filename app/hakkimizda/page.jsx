@@ -1,6 +1,11 @@
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
+import Link from "next/link"
 
+
+export const metadata = {
+  title: "Hakkımızda"
+}
 const HakkimizdaPage = () => {
   return (
     <div className="xl:px-36 md:px-16 py-8 px-4">
@@ -20,7 +25,9 @@ const HakkimizdaPage = () => {
 
           Yalnızca İngilizce öğretmiyoruz; aynı zamanda öğrenmeyi öğrenmenize yardımcı oluyoruz. Kendi potansiyelinizi keşfetmeniz ve dil bariyerini aşmanız için her zaman yanınızdayız. Ardemy olarak, sadece bir eğitim platformu değil, aynı zamanda güvenilir bir öğrenme yol arkadaşınız olmayı hedefliyoruz.
         </p>
-        <Button className={"mt-5 cursor-pointer hover:-translate-y-1 hover:scale-110 duration-300 bg-purple-700"}>Randevu Oluştur</Button>
+        <Link href={"/iletisim"}>
+          <Button className={"mt-5 cursor-pointer hover:-translate-y-1 hover:scale-110 duration-300 bg-purple-700"}>Randevu Oluştur</Button>
+        </Link>
       </div>
     </div>
   )

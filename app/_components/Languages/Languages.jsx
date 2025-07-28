@@ -42,10 +42,9 @@ const Languages = () => {
               <CardAction></CardAction>
             </CardHeader>
             <CardContent className={"flex justify-center"}>
-              <Image src={language.image} alt={`${language.title} Dili`} height={100} width={100} className="h-44 w-72 md:h-full md:w-full" />
+              <Image src={language.image} alt={`${language.title} Dili`} height={1000} width={1000} className="h-44 w-72 md:h-full md:w-full" />
             </CardContent>
             <CardFooter>
-
             </CardFooter>
           </Card>
         ))}

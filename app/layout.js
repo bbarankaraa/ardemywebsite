@@ -4,6 +4,7 @@ import Navbar from "@/components/navbar/Navbar";
 import Topbar from "@/components/topbar/topbar";
 import Footer from "@/components/footer/Footer";
 import { siteMetadata } from "@/lib/siteMetaData";
+import PageTitleChanger from "@/components/PageTitleChanger";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -47,7 +48,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${poppins.variable} antialiased`}
       >
-        
+        <PageTitleChanger />
         <Topbar />
         <Navbar />
         {children}

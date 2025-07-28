@@ -5,6 +5,10 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion"
 
+export const metadata = {
+  title: "S.S.S."
+}
+
 const questions = [
   {
     id:1,
