@@ -129,7 +129,7 @@ const ContactForm = () => {
             )}
           />
           <ReCAPTCHA
-            sitekey="6Lc0lJErAAAAALbFr39VtLc7508YhvQF5YV3Wk3y"
+            sitekey="6Le07ZErAAAAADkpD_cj0cJ53lDik3Uuo38RcbSb"
             onChange={(token) => {
               setRecaptchaToken(token);
               form.setValue("recaptcha", token || null);
