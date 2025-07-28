@@ -1,6 +1,6 @@
 import { Separator } from "@/components/ui/separator"
 import ContactForm from "./_components/ContactForm"
-import { MapIcon, PhoneCallIcon } from "lucide-react"
+import { PhoneCallIcon } from "lucide-react"
 import { FaEnvelope } from "react-icons/fa"
 
 const IletisimPage = () => {
