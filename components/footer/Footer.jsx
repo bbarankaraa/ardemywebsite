@@ -31,16 +31,16 @@ const Footer = () => {
             <div className="flex flex-col gap-3">
                 <h1 className="text-2xl font-bold">Bağlantılar</h1>
                 <div className="flex flex-col gap-3">
-                    <Link href={""} className="hover:text-red-500 duration-300 cursor-pointer">
+                    <Link href={"/"} className="hover:text-red-500 duration-300 cursor-pointer">
                         Anasayfa
                     </Link>
-                    <Link href={""} className="hover:text-red-500 duration-300 cursor-pointer">
-                        Hakkımda
+                    <Link href={"/hakkimizda"} className="hover:text-red-500 duration-300 cursor-pointer">
+                        Hakkımızda
                     </Link>
-                    <Link href={""} className="hover:text-red-500 duration-300 cursor-pointer">
+                    <Link href={"/sss"} className="hover:text-red-500 duration-300 cursor-pointer">
                         Sıkça Sorulan Sorular
                     </Link>
-                    <Link href={""} className="hover:text-red-500 duration-300 cursor-pointer">
+                    <Link href={"/iletisim"} className="hover:text-red-500 duration-300 cursor-pointer">
                         İletişim
                     </Link>
                 </div>
@@ -65,7 +65,6 @@ const Footer = () => {
             <div className="flex flex-col gap-3">
                 <h1 className="text-2xl font-bold">İletişim</h1>
                  <div className="flex flex-col">
-        
         <Separator />
         <div className="flex items-center mb-4">
           <PhoneCallIcon size={16} />
