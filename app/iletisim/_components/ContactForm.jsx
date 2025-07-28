@@ -48,7 +48,6 @@ const ContactForm = () => {
   });
 
   async function onSubmit(values) {
-    console.log(values)
     try {
       const response = await fetch("/api/contact", {
         method: "POST",
@@ -124,7 +123,7 @@ const ContactForm = () => {
             )}
           />
           <ReCAPTCHA
-            sitekey="6LdFuXkrAAAAACAYTR6oIGgdJ2l3e2YmO_mzVgF1"
+            sitekey="6Lc0lJErAAAAALbFr39VtLc7508YhvQF5YV3Wk3y"
             onChange={(token) => {
               setRecaptchaToken(token);
               form.setValue("recaptcha", token || null);
