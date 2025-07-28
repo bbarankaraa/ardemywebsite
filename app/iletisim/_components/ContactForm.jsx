@@ -6,7 +6,6 @@ import { Button } from "@/components/ui/button"
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -56,9 +55,16 @@ const ContactForm = () => {
         },
         body: JSON.stringify({ ...values }),
       });
-      toast("Mail gönderildi!");
+
+      if (response.ok) { // Yanıt başarılıysa (2xx durum kodu)
+        toast.success("Mail gönderildi!");
+      } else {
+        const errorData = await response.json();
+        toast.error(errorData.message || "Bir hata oluştu!"); // Sunucudan gelen hata mesajını göster
+      }
     } catch (error) {
-      console.log(error)
+      console.error(error); // Hata durumunda konsola yazdır
+      toast.error("İstek gönderilirken bir hata oluştu!"); // Kullanıcıya genel bir hata mesajı göster
     }
   }
 
@@ -74,7 +80,7 @@ const ContactForm = () => {
         draggable
         pauseOnHover
         theme="dark"
-       />
+      />
       <h2 className="text-3xl text-center mb-5">Randevu Formu</h2>
       <p className="text-gray-500 text-center mb-5">Randevunuzu burdan hemen oluşturun! En kısa süre içerisinde size ulaşacağız...</p>
       <Form {...form}>
@@ -133,7 +139,9 @@ const ContactForm = () => {
               form.setValue("recaptcha", "");
             }}
           />
-          <Button type="submit" className={"cursor-pointer"}>Randevu Oluştur</Button>
+          <Button type="submit" disabled={form.formState.isSubmitting}>
+            {form.formState.isSubmitting ? "Gönderiliyor..." : "Randevu Oluştur"}
+          </Button>
         </form>
       </Form>
     </div>
