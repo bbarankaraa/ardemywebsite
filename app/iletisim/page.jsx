@@ -16,18 +16,18 @@ const IletisimPage = () => {
         <p className="text-gray-500 text-center mb-10">Aşağıdaki bilgilerden bize istediğiniz zaman ulaşabilirsiniz...</p>
         <div className="flex flex-col">
         <div className="flex items-center mb-4">
-          <MapIcon size={16} className="text-purple-700" />
-          <span className="ms-3">Hacıahmet, Kurtuluş Deresi Cd. No:29, 34440 Beyoğlu/İstanbul</span>
+          <MapIcon size={16} />
+          <span className="ms-3">Hacıahmet, Kurtuluş Deresi Cd. No:29, 34440 İzmit/Kocaeli</span>
         </div>
         <Separator />
         <div className="flex items-center mb-4">
           <PhoneCallIcon size={16} />
-          <span className="ms-3">+90 555 555 55 55</span>
+          <span className="ms-3">+90 551 132 03 40</span>
         </div>
         <Separator />
         <div className="flex items-center mb-4">
           <FaEnvelope size={16} />
-          <span className="ms-3">ediz@iletisim.com</span>
+          <span className="ms-3">sevinclere@gmail.com</span>
         </div>
         </div>
       </div>

@@ -3,7 +3,7 @@ import { FaCheck } from "react-icons/fa"
 
 const Why = () => {
   return (
-    <div className="flex md:flex-row flex-col items-center justify-between xl:px-36 md:px-16 py-8 px-4 md:gap-10 gap-20 mt-20">
+    <div className="flex md:flex-row flex-col items-center justify-between xl:px-36 md:px-16 py-8 px-4 md:gap-10 gap-20 mt-5">
         <div className="md:w-9/12">
             <h2 className="text-3xl font-semibold mb-5">Neden bizi seçmelisiniz?</h2>
             <p className="mb-5 text-gray-500">Yalnızca öğretmeniniz değil, yol arkadaşınız oluyoruz. Sıfırdan başlayan öğrencilerimizle bile daha ilk derste cümle kurmaya başlıyoruz. Konuşarak öğrenmeye dayalı, sizin hızınıza uygun bir sistemle birlikte ilerliyoruz. Çünkü önemli olan, öğrendiğimizi hissetmemiz.</p>

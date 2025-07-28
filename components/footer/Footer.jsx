@@ -1,8 +1,9 @@
-import { InstagramIcon } from "lucide-react"
+import { Instagram, InstagramIcon, MapIcon, PhoneCallIcon } from "lucide-react"
 import Link from "next/link"
-import { FaTelegram, FaWhatsapp } from "react-icons/fa"
+import { FaEnvelope, FaTelegram, FaWhatsapp } from "react-icons/fa"
 import { Button } from "../ui/button"
 import Image from "next/image"
+import { Separator } from "@radix-ui/react-separator"
 
 const Footer = () => {
     return (
@@ -17,72 +18,70 @@ const Footer = () => {
                     <Image src={"/footerimage.png"} alt="footer image h-{1000px} w-96" height={1000} width={800} />
                 </div>
             </div>
+            
             <div className="flex flex-col gap-3 max-w-3xs">
+                
                 <h1 className="text-2xl font-bold">Ediz Sevinçler</h1>
-                <p className="text-sm text-gray-500">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis, tenetur. Quam eaque, repudiandae id explicabo sit, accusamus nihil dolorum minus, nobis sint fuga. Repudiandae libero fugit placeat earum debitis minus totam ullam voluptatem. Totam quae in omnis quibusdam ipsum iste atque, facilis nihil veniam earum, nulla vero culpa, sequi dicta.</p>
-                <div className="flex items-center gap-3">
+                <p className="text-sm text-gray-500">Ardemy’i kurarken amacımız çok netti: İngilizce öğrenmenin herkes için ulaşılabilir, etkili ve kişiselleştirilmiş olmasını sağlamak.
+                    Klasik yöntemlerden sıkılan, gerçek hayatta işe yarayacak şekilde İngilizcesini geliştirmek isteyen herkese modern, etkileşimli bir deneyim sunuyoruz.
+                    Biz sadece dil öğretmiyoruz; aynı zamanda öğrenmeyi öğrenmenize, kendinize güvenmenize ve potansiyelinizi keşfetmenize yardımcı oluyoruz.
+                    Ardemy, sizin bulunduğunuz yerden başlayarak, kendi hızınızda ilerleyebileceğiniz bir yol arkadaşı.
+                    Hedefimiz, İngilizce öğrenme yolculuğunu herkes için daha insani, daha keyifli ve daha etkili hale getirmek.</p>
+            </div>
+            <div className="flex flex-col gap-3">
+                <h1 className="text-2xl font-bold">Bağlantılar</h1>
+                <div className="flex flex-col gap-3">
                     <Link href={""} className="hover:text-red-500 duration-300 cursor-pointer">
-                        <InstagramIcon />
+                        Anasayfa
                     </Link>
                     <Link href={""} className="hover:text-red-500 duration-300 cursor-pointer">
-                        <FaWhatsapp size={26} />
+                        Hakkımda
                     </Link>
                     <Link href={""} className="hover:text-red-500 duration-300 cursor-pointer">
+                        Sıkça Sorulan Sorular
+                    </Link>
+                    <Link href={""} className="hover:text-red-500 duration-300 cursor-pointer">
+                        İletişim
+                    </Link>
+                </div>
+            </div>
+            <div className="flex flex-col gap-3">
+                <h1 className="text-2xl font-bold">Sosyal Medya</h1>
+                <div className="flex flex-col gap-3">
+                    <Link href={""} className="hover:text-red-500 duration-300 cursor-pointer flex gap-2">
+                        <Instagram />
+                        <span>Instagram</span>
+                    </Link>
+                    <Link href={""} className="hover:text-red-500 duration-300 cursor-pointer flex gap-2">
                         <FaTelegram size={26} />
+                        <span>Telegram</span>
+                    </Link>
+                    <Link href={""} className="hover:text-red-500 duration-300 cursor-pointer flex gap-2">
+                        <FaWhatsapp size={26} />
+                        <span>Whatsapp</span>
                     </Link>
                 </div>
             </div>
             <div className="flex flex-col gap-3">
-                <h1 className="text-2xl font-bold">Bağlantılar</h1>
-                <div className="flex flex-col gap-3">
-                    <Link href={""} className="hover:text-red-500 duration-300 cursor-pointer">
-                        Anasayfa
-                    </Link>
-                    <Link href={""} className="hover:text-red-500 duration-300 cursor-pointer">
-                        Hakkımda
-                    </Link>
-                    <Link href={""} className="hover:text-red-500 duration-300 cursor-pointer">
-                        Sıkça Sorulan Sorular
-                    </Link>
-                    <Link href={""} className="hover:text-red-500 duration-300 cursor-pointer">
-                        İletişim
-                    </Link>
-                </div>
+                <h1 className="text-2xl font-bold">İletişim</h1>
+                 <div className="flex flex-col">
+        <div className="flex items-center mb-4">
+          <MapIcon size={16} />
+          <span className="ms-3">Hacıahmet, Kurtuluş Deresi Cd. No:29, 34440 Beyoğlu/İstanbul</span>
+        </div>
+        <Separator />
+        <div className="flex items-center mb-4">
+          <PhoneCallIcon size={16} />
+          <span className="ms-3">+90 551 132 03 40</span>
+        </div>
+        <Separator />
+        <div className="flex items-center mb-4">
+          <FaEnvelope size={16} />
+          <span className="ms-3">sevinclere@gmail.com</span>
+        </div>
+        </div>
             </div>
-            <div className="flex flex-col gap-3">
-                <h1 className="text-2xl font-bold">Bağlantılar</h1>
-                <div className="flex flex-col gap-3">
-                    <Link href={""} className="hover:text-red-500 duration-300 cursor-pointer">
-                        Anasayfa
-                    </Link>
-                    <Link href={""} className="hover:text-red-500 duration-300 cursor-pointer">
-                        Hakkımda
-                    </Link>
-                    <Link href={""} className="hover:text-red-500 duration-300 cursor-pointer">
-                        Sıkça Sorulan Sorular
-                    </Link>
-                    <Link href={""} className="hover:text-red-500 duration-300 cursor-pointer">
-                        İletişim
-                    </Link>
-                </div>
-            </div>
-            <div className="flex flex-col gap-3">
-                <h1 className="text-2xl font-bold">Bağlantılar</h1>
-                <div className="flex flex-col gap-3">
-                    <Link href={""} className="hover:text-red-500 duration-300 cursor-pointer">
-                        Anasayfa
-                    </Link>
-                    <Link href={""} className="hover:text-red-500 duration-300 cursor-pointer">
-                        Hakkımda
-                    </Link>
-                    <Link href={""} className="hover:text-red-500 duration-300 cursor-pointer">
-                        Sıkça Sorulan Sorular
-                    </Link>
-                    <Link href={""} className="hover:text-red-500 duration-300 cursor-pointer">
-                        İletişim
-                    </Link>
-                </div>
-            </div>
+            
         </div>
     )
 }

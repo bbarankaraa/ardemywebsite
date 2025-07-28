@@ -33,7 +33,11 @@ const Hero = () => {
                             <CountUp end={1000} className="md:text-2xl text-xl text-green-500 font-bold" />
                             <span className="text-green-500 font-bold text-2xl">+</span>
                         </motion.div>
-                        <h5 className="md:text-2xl text-xl md:mt-1">Saat beraber <br /> işlenen ders</h5>
+                        <motion.h5
+                            initial={{ y: -50, opacity: 0 }}
+                            animate={{ y: 0, opacity: 1 }}
+                            transition={{ duration: 0.8, ease: 'easeOut' }}
+                            className="md:text-2xl text-xl md:mt-1">Saat beraber <br /> işlenen ders</motion.h5>
                     </div>
                     <div>
                         <motion.div
@@ -44,7 +48,10 @@ const Hero = () => {
                             <CountUp end={20} className="md:text-2xl text-xl text-blue-500 font-bold" />
                             <span className="text-blue-500 font-bold text-2xl">+</span>
                         </motion.div>
-                        <h5 className="md:text-2xl text-xl md:mt-1">Eğitim yolculuğunda <br /> desteklenen öğrenci</h5>
+                        <motion.h5
+                            initial={{ y: -50, opacity: 0 }}
+                            animate={{ y: 0, opacity: 1 }}
+                            transition={{ duration: 0.8, ease: 'easeOut' }} className="md:text-2xl text-xl md:mt-1">Eğitim yolculuğunda <br /> desteklenen öğrenci</motion.h5>
                     </div>
                     <div>
                         <motion.div
@@ -55,7 +62,10 @@ const Hero = () => {
                             <CountUp end={50} className="md:text-2xl text-xl text-red-500 font-bold" />
                             <span className="text-red-500 font-bold text-2xl">+</span>
                         </motion.div>
-                        <h5 className="md:text-2xl text-xl md:mt-1">Başarılı sınav</h5>
+                        <motion.h5
+                            initial={{ y: -50, opacity: 0 }}
+                            animate={{ y: 0, opacity: 1 }}
+                            transition={{ duration: 0.8, ease: 'easeOut' }} className="md:text-2xl text-xl md:mt-1">Başarılı sınav</motion.h5>
                     </div>
 
                 </div>
