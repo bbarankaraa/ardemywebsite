@@ -1,12 +1,12 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
-const resend = new Resend(process.env.RESEND_API_KEY);
+const resend = new Resend("re_4TpAGS2t_4MWzn3GUzVnAi8g7Ye5kxAmp");
 export async function POST(req) {
     try {
         const {name, email, phone,recaptcha} = await req.json();
 
         const recaptchaResponse = await fetch(
-            `https://www.google.com/recaptcha/api/siteverify?secret=${process.env.RECAPTCHA_SECRET_KEY}&response=${recaptcha}`, {method:"POST"}
+            `https://www.google.com/recaptcha/api/siteverify?secret=6Le07ZErAAAAAM_23AZ9OSEhJ4fAWKr_kq4S9miA&response=${recaptcha}`, {method:"POST"}
         );
 
         const recaptchaResult= await recaptchaResponse.json();
