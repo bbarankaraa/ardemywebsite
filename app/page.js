@@ -9,7 +9,7 @@ export default function Home() {
     <>
       <Hero />
       <Languages />
-      <Video />
+    
       <Why />
       <Process />
     </>

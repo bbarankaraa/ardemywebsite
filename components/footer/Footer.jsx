@@ -65,10 +65,7 @@ const Footer = () => {
             <div className="flex flex-col gap-3">
                 <h1 className="text-2xl font-bold">İletişim</h1>
                  <div className="flex flex-col">
-        <div className="flex items-center mb-4">
-          <MapIcon size={16} />
-          <span className="ms-3">Hacıahmet, Kurtuluş Deresi Cd. No:29, 34440 Beyoğlu/İstanbul</span>
-        </div>
+        
         <Separator />
         <div className="flex items-center mb-4">
           <PhoneCallIcon size={16} />

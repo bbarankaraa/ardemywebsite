@@ -23,7 +23,7 @@ const Hero = () => {
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ duration: 0.8, ease: 'easeOut' }}
                     href="/iletisim" className="px-5 py-2 md:text-lg text-sm bg-purple-500 text-white rounded-3xl duration-300 hover:text-black hover:bg-white hover:border-2">İLETİŞİME GEÇ</motion.a>
-                <div className="flex md:flex-row flex-col md:items-center md:mt-20 mt-10 justify-between gap-5">
+                <div className="flex md:flex-row flex-col md:items-center md:mt-20 mt-10 justify-start gap-5">
                     <div>
                         <motion.div
                             initial={{ y: -50, opacity: 0 }}
@@ -53,20 +53,7 @@ const Hero = () => {
                             animate={{ y: 0, opacity: 1 }}
                             transition={{ duration: 0.8, ease: 'easeOut' }} className="md:text-2xl text-xl md:mt-1">Eğitim yolculuğunda <br /> desteklenen öğrenci</motion.h5>
                     </div>
-                    <div>
-                        <motion.div
-                            initial={{ y: -50, opacity: 0 }}
-                            animate={{ y: 0, opacity: 1 }}
-                            transition={{ duration: 0.8, ease: 'easeOut' }}
-                            className="flex items-center md:gap-1">
-                            <CountUp end={50} className="md:text-2xl text-xl text-red-500 font-bold" />
-                            <span className="text-red-500 font-bold text-2xl">+</span>
-                        </motion.div>
-                        <motion.h5
-                            initial={{ y: -50, opacity: 0 }}
-                            animate={{ y: 0, opacity: 1 }}
-                            transition={{ duration: 0.8, ease: 'easeOut' }} className="md:text-2xl text-xl md:mt-1">Başarılı sınav</motion.h5>
-                    </div>
+                    
 
                 </div>
             </div>
