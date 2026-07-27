@@ -19,11 +19,6 @@ const languageCards = [
     id: 2,
     title: "Rusça",
     image: "/Russian.jpg"
-  },
-  {
-    id: 3,
-    title: "Almanca",
-    image: "/German.webp"
   }
 ]
 
@@ -31,7 +26,7 @@ const Languages = () => {
   return (
     <div className='xl:px-36 md:px-16 py-8 px-4 gap-5 md:gap-10'>
       <h2 className="text-center md:text-4xl text-2xl font-semibold md:mb-10 mb-5 mt-5">Eğitimini Verdiğimiz Diller</h2>
-      <div className='grid grid-cols-1 md:grid-cols-3 gap-10'>
+      <div className='grid grid-cols-1 md:grid-cols-2 gap-10'>
         {languageCards.map((language) => (
           <Card key={language.id} className={"hover:-translate-y-3 duration-300"}>
             <CardHeader>
