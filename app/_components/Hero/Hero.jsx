@@ -45,7 +45,7 @@ const Hero = () => {
                             animate={{ y: 0, opacity: 1 }}
                             transition={{ duration: 0.8, ease: 'easeOut' }}
                             className="flex items-center gap-1">
-                            <CountUp end={30} className="md:text-2xl text-xl text-blue-500 font-bold" />
+                            <CountUp end={40} className="md:text-2xl text-xl text-blue-500 font-bold" />
                             <span className="text-blue-500 font-bold text-2xl">+</span>
                         </motion.div>
                         <motion.h5
