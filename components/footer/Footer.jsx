@@ -50,15 +50,11 @@ const Footer = () => {
             <div className="flex flex-col gap-3">
                 <h1 className="text-2xl font-bold">Sosyal Medya</h1>
                 <div className="flex flex-col gap-3">
-                    <Link href={""} className="hover:text-red-500 duration-300 cursor-pointer flex gap-2">
+                    <Link href={"https://www.instagram.com/edizsevincler/"} className="hover:text-red-500 duration-300 cursor-pointer flex gap-2">
                         <Instagram />
                         <span>Instagram</span>
                     </Link>
-                    <Link href={""} className="hover:text-red-500 duration-300 cursor-pointer flex gap-2">
-                        <FaTelegram size={26} />
-                        <span>Telegram</span>
-                    </Link>
-                    <Link href={""} className="hover:text-red-500 duration-300 cursor-pointer flex gap-2">
+                    <Link href={"https://wa.me/905511320340"} className="hover:text-red-500 duration-300 cursor-pointer flex gap-2">
                         <FaWhatsapp size={26} />
                         <span>Whatsapp</span>
                     </Link>
